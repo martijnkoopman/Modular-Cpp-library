@@ -6,7 +6,7 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - cmake ../foolib
+  - cmake .. -DBUILD_SHARED_LIBS=ON -DBUILD_TESTING=ON -DBUILD_FOO_EXTENSION=ON
 
 script:
   - make

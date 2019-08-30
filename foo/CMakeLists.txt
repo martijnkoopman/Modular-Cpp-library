@@ -1,9 +1,12 @@
 project(foo)
 
-option(BUILD_SHARED_LIBS "Build spatiumgl as shared library." ON)
+option(BUILD_SHARED_LIBS "Build FOO as shared library." ON)
+option(BUILD_FOO_EXTENSION "Build FOO with module EXTENSION." ON)
 
 add_subdirectory(core)
-add_subdirectory(extension)
+if(BUILD_FOO_EXTENSION)
+	add_subdirectory(extension)
+endif()
 
 # Create library
 add_library(foo foo.cpp)
@@ -17,7 +20,9 @@ endif()
 
 # Link core and extension
 target_link_libraries(foo PUBLIC core)
-target_link_libraries(foo PUBLIC extension)
+if(BUILD_FOO_EXTENSION)
+	target_link_libraries(foo PUBLIC extension)
+endif()
 
 # Install library
 install(TARGETS foo)
@@ -27,5 +32,7 @@ install(DIRECTORY ${aa} core/include/ extension/include/ DESTINATION include
 # Unit testing
 if(BUILD_TESTING)
 	add_subdirectory(core/test)
-	add_subdirectory(extension/test)
+	if(BUILD_FOO_EXTENSION)
+		add_subdirectory(extension/test)
+	endif()
 endif()

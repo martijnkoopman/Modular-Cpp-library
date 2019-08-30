@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(foobar)
+project(foolib)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
 
@@ -9,5 +9,5 @@ if(BUILD_TESTING)
 	enable_testing()
 endif()
 
-add_subdirectory(foolib)
-add_subdirectory(fooapp)
+add_subdirectory(foo)
+add_subdirectory(app)

@@ -1,8 +1,0 @@
-set(FOO_VERSION 0.1.0)
-
-@PACKAGE_INIT@
-
-set_and_check(FOO_INCLUDE_DIRS "@PACKAGE_INSTALL_INCLUDE_DIRS@")
-set_and_check(FOO_LIBRARIES "@PACKAGE_INSTALL_LIBRARIES@")
-
-check_required_components(Foo)

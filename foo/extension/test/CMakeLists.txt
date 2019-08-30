@@ -1,7 +1,7 @@
 project(extension_test LANGUAGES CXX)
 
-add_executable(${PROJECT_NAME} test_ExtensionClass.cpp)
+add_executable(extension_test test_ExtensionClass.cpp)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE foo)
+target_link_libraries(extension_test PRIVATE foo)
 
-add_test(unit ${PROJECT_NAME})
+add_test(NAME extension_test COMMAND $<TARGET_FILE:extension_test>)

@@ -1,7 +1,7 @@
 project(core_test LANGUAGES CXX)
 
-add_executable(${PROJECT_NAME} test_CoreClass.cpp)
+add_executable(core_test test_CoreClass.cpp)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE foo)
+target_link_libraries(core_test PRIVATE foo)
 
-add_test(unit ${PROJECT_NAME})
+add_test(NAME core_test COMMAND $<TARGET_FILE:core_test>)

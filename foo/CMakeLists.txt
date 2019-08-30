@@ -25,9 +25,11 @@ if(BUILD_FOO_EXTENSION)
 endif()
 
 # Install library
-install(TARGETS foo)
-install(DIRECTORY ${aa} core/include/ extension/include/ DESTINATION include
-        FILES_MATCHING PATTERN "*.hpp")
+install(TARGETS foo DESTINATION lib)
+install(DIRECTORY core/include/ DESTINATION include FILES_MATCHING PATTERN "*.hpp")
+if(BUILD_FOO_EXTENSION)
+	install(DIRECTORY extension/include/ DESTINATION include FILES_MATCHING PATTERN "*.hpp")
+endif()
 
 # Unit testing
 if(BUILD_TESTING)

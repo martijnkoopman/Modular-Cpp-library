@@ -1,4 +1,4 @@
-# CMake template: Modular C++ library [![Build Status](https://travis-ci.org/martijnkoopman/Modular-library.svg?branch=master)](https://travis-ci.org/martijnkoopman/Modular-library) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Modular C++ library with CMake [![Build Status](https://travis-ci.org/martijnkoopman/Modular-Cpp-library.svg?branch=master)](https://travis-ci.org/martijnkoopman/Modular-Cpp-library) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## What' this?
 This repository is a template for a modular C++ library.

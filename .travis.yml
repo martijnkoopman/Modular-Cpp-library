@@ -2,7 +2,7 @@ language: cpp
 matrix:
   include:
     - os: linux
-	  dist: bionic
+      dist: bionic
       compiler: gcc
       before_script:
         - mkdir build

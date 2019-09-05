@@ -1,10 +1,10 @@
 # Modular C++ library with CMake [![Build Status](https://travis-ci.org/martijnkoopman/Modular-Cpp-library.svg?branch=master)](https://travis-ci.org/martijnkoopman/Modular-Cpp-library) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-## What' this?
+## Introduction
 This repository is a template for a modular C++ library.
 
 ### Features
-* All modules are eventually build into one target 'foo' (foo.lib, foo.so, foo.dll).  
+* All modules are eventually built into one target 'foo' (foo.lib, foo.so, foo.dll).  
 * This resulting target can be linked to by apps. 
 * Individual modules can be turned on and off.
 * Each module can have its own private dependencies.

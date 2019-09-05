@@ -1,6 +1,6 @@
 #include "FooExport.hpp"
 
-int FOO_EXPORT dummy()
+FOO_EXPORT int dummy()
 {
 	return 0;
 }

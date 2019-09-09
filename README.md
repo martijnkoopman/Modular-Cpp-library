@@ -18,7 +18,7 @@ This repository is a template for a modular C++ library.
   * ~~Automated deployment to GitHub project release~~ ToDo 
 
 ### Architecture
-...
+![Architecture](https://g.gravizo.com/svg?digraph%20G%20%7B%0A%20subgraph%20cluster_0%20%7B%0A%20foo%20-%3E%20core%3B%0A%20foo%20-%3E%20extension%3B%0A%20extension%20-%3E%20core%20%5Bstyle%3Ddashed%2C%20label%3Ddepends%2C%20fontcolor%3Ddimgray%2C%20color%3Ddimgray%5D%3B%0A%20%7B%20rank%3Dsame%20core%20extension%20%7D%0A%20label%20%3D%20%22FooLib%22%3B%0A%20labelloc%3Dt%3B%0A%20labeljust%3Dl%3B%0A%7D%0Aapp%20%5Blabel%3D%22Your%20app%22%2C%20shape%3Dbox%2C%20style%3Dfilled%2C%20fillcolor%3Dblack%2C%20fontcolor%3Dwhite%5D%3B%0Aapp%20-%3E%20foo%3B%0Adependency%20%5Blabel%3D%22dependency%22style%3Dfilled%2C%20fillcolor%3Dlightgrey%5D%3B%0Aextension%20-%3E%20dependency%20%5Bstyle%3Ddashed%2C%20label%3D%22%20%20%20depends%22%2C%20fontcolor%3Ddimgray%2C%20color%3Ddimgray%5D%3B%0A%7D)
 
 ### Project structure
 * CMakeLists.txt
